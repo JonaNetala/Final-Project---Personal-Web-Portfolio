@@ -1,0 +1,115 @@
+/* styles.css – Personal Web Portfolio for CREA 330 */
+
+/* === Base Reset === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  header {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+  }
+  
+  header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+  }
+  
+  nav {
+    margin-top: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    margin: 0 10px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    margin-top: 40px;
+  }
+  
+  /* === Sections === */
+  section {
+    margin-bottom: 60px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  .project {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .project:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project h3 {
+    font-size: 1.5rem;
+    color: #1e3c72;
+  }
+  
+  .project p {
+    margin: 10px 0;
+  }
+  
+  .project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2a5298;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+  }
+  
+  .project a:hover {
+    border-bottom: 1px solid #2a5298;
+  }
+  
+  /* === Contact Section === */
+  #contact p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  /* === Footer === */
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 60px;
+    color: #555;
+  }
+  
