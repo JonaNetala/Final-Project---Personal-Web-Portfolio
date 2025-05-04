@@ -1,4 +1,3 @@
-<!-- Personal Web Portfolio - Interdisciplinary Web Design (CREA 330) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,62 +5,136 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jonathan Netala | Web Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
-  <script src="flutter.js" defer></script>
   <script src="script.js" defer></script>
-  <script src="main.dart.js" type="application/javascript"></script>
 </head>
-
-<body>
-  <header>
-    <h1>Jonathan Netala</h1>
-    <p>A showcase of web projects built throughout CREA 330</p>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#capstone">Capstone</a>
-      <a href="#contact">Contact</a>
-    </nav>
+<body onscroll="scrolling()">
+  <header class="header">
+    <h1 id="headerName"><a href="#" onclick="toTop()">Jonathan Netala</a></h1>
+    <h2>Pre-emptive VCU Alumni (Class of 2025) | Currently Applying for Entry-Level Data Analyst Roles | Data Engineer Skills | Business Analyst Skills</h2>
+    <button id="themeToggle">Toggle Theme</button>
   </header>
 
-  <main>
-    <section id="projects">
-      <h2>Interdisciplinary Web Design Projects</h2>
-      <div class="project">
-        <h3>Module 5 - Chrome Extension</h3>
-        <p>Customizes the word "coronavirus" on webpages in creative ways. Includes blackout, removal, and rainbow effects.</p>
-        <a href="https://github.com/YOUR_USERNAME/module5-chrome-extension" target="_blank">View on GitHub</a>
-      </div>
+  <main class="container">
+    <!-- About Me Section -->
+    <section class="card intro">
+      <img src="pfp.jpg" alt="Jonathan Netala's profile image" />
+      <h3>About Me</h3>
+      <p>
+        Bachelor of Science in Computer Science student at Virginia Commonwealth University (Expected May 2025). 
+        Passionate about data analysis, engineering, and business intelligence. Below are selected works from CREA 330: Interdisciplinary Web Design, 
+        showcasing my foundational skills in JavaScript and web development.
+      </p>
+    </section>
 
-      <div class="project">
-        <h3>Module 6 - Ultimate Insect Battle</h3>
-        <p>Expanded insect game with new battle mode, animations, and persistent high score tracking.</p>
-        <a href="https://github.com/YOUR_USERNAME/module6-ultimate-insect-battle" target="_blank">View on GitHub</a>
-      </div>
+    <!-- CREA 330 Projects Section -->
+    <section class="card">
+      <h3>CREA 330 Projects</h3>
+      <ul>
+        <li><strong>Lyrics Search App</strong> — A minimalist app for searching lyrics with additional features like favorites and dark mode. 
+          <a href="https://github.com/JonaNetala/Module-7-Project---Lyrics-Search-App-" target="_blank">View on GitHub</a>
+        </li>
+        <li><strong>Build-A-Piano</strong> — A fun project to create a playable piano using JavaScript. 
+          <a href="https://github.com/JonaNetala/Build-A-Piano" target="_blank">View on GitHub</a>
+        </li>
+        <li><strong>Dad Jokes</strong> — A simple app to fetch and display random dad jokes. 
+          <a href="https://github.com/JonaNetala/Dad-Jokes" target="_blank">View on GitHub</a>
+        </li>
+        <li><strong>Sound Board</strong> — A soundboard app with various sound effects. 
+          <a href="https://github.com/JonaNetala/Sound-Board" target="_blank">View on GitHub</a>
+        </li>
+        <li><strong>Custom Video Player</strong> — A custom video player with advanced controls. 
+          <a href="https://github.com/JonaNetala/CREA330-Module-1-Project-Custom-Video-Player" target="_blank">View on GitHub</a>
+        </li>
+      </ul>
+    </section>
 
-      <div class="project">
-        <h3>Module 7 - Lyrics Search App</h3>
-        <p>Minimalist Shazam-style app with lyrics search, favorites, dark/light mode, related suggestions, and share options.</p>
-        <a href="https://github.com/YOUR_USERNAME/module7-lyrics-search" target="_blank">View on GitHub</a>
+    <!-- CREA 330 Assignments Section -->
+    <section class="card">
+      <h3>CREA 330 Assignments</h3>
+      <ul>
+        <li><strong>Style Your Bank App</strong> — An assignment to style a bank app using CSS. 
+          <a href="https://github.com/JonaNetala/7.2-Assignment---Style-Your-Bank-App" target="_blank">View on GitHub</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="card">
+      <h3>Resume</h3>
+      <p>Click below to download my updated resume.</p>
+      <a href="Jonathan_Netala_SWE_ML_Analyst_Resume FINAL.pdf" download>Download Resume</a>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="card">
+      <h3>Technical Skills</h3>
+      <ul>
+        <li><strong>Coding Languages:</strong> Java, C++, Python, JavaScript, SQL, NoSQL</li>
+        <li><strong>Cloud & Distributed Systems:</strong> AWS, GCP, Azure, Docker, Kubernetes</li>
+        <li><strong>Data Engineering:</strong> ETL, Data Warehousing, Apache Spark, ELK Stack</li>
+        <li><strong>Frameworks & Tools:</strong> TensorFlow, Flask, Tableau, Jupyter Notebook</li>
+        <li><strong>Certifications:</strong> GENCYBER Linux & Cybersecurity, GeeksforGeeks ML & Data Science</li>
+      </ul>
+    </section>
+
+    <!-- Ongoing Personal Projects Section -->
+    <section class="card">
+      <h3>Ongoing Personal Projects</h3>
+      <ul>
+        <li><strong>Tech Entry Toolkit</strong> — Created an interactive educational platform simplifying software development concepts for beginners.
+          <ul>
+            <li>Utilized AWS and GitLab for hosting and managing the platform.</li>
+          </ul>
+        </li>
+        <li><strong>Paralysis Analysis Algorithm Scrubber</strong> — Developed an intelligent algorithm to sift through extensive online data and mitigate information overload.
+          <ul>
+            <li>Employed Elasticsearch and Kibana for data visualization and trend analysis.</li>
+          </ul>
+        </li>
+        <li><strong>Enhanced Banking Integration</strong> — Developed a system for analyzing banking data with real-time fraud detection.
+          <ul>
+            <li>Implemented machine learning models to predict potential fraud.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Interactive Games Section -->
+    <section class="card">
+      <h3>Interactive Games</h3>
+      <p>Test your knowledge about my portfolio or have fun with interactive games!</p>
+      <div id="gameContainer">
+        <button id="quizGameBtn">Play Quiz</button>
+        <button id="catchWordGameBtn">Catch the Word</button>
+        <button id="crosswordGameBtn">Crossword Puzzle</button>
+        <button id="returnToMenuBtn" style="display: none;">Return to Main Menu</button>
+        <button id="resetGameBtn" style="display: none;">Reset Game</button>
       </div>
     </section>
 
-    <section id="capstone">
-      <h2>Capstone Project</h2>
-      <div class="project">
-        <h3>Renovation Tracker (CS Capstone)</h3>
-        <p>Full-stack system for managing home renovation data with scraping, image uploads, and history logs.</p>
-        <a href="https://github.com/VCU-CS-Capstone/CS-25-348-RenovationTracker" target="_blank">View Capstone</a>
-      </div>
+    <!-- VCU Capstone Project Section -->
+    <section class="card">
+      <h3>VCU Capstone Project</h3>
+      <p>Worked on a Renovation Tracker tool using AWS, FastAPI, and React. Automated listing image scraping and metadata classification.</p>
+      <a href="https://github.com/VCU-CS-Capstone/CS-25-348-RenovationTracker" target="_blank">View on GitHub</a>
     </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Email: netalaj@vcu.edu</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank">My Profile</a></p>
+    <!-- Contact Section -->
+    <section class="card">
+      <h3>Contact Me</h3>
+      <p>Email: <a href="mailto:netalajd@vcu.edu">netalajd@vcu.edu</a></p>
+      <p>Alternative Email: <a href="mailto:jonathan.netala@gmail.com">jonathan.netala@gmail.com</a></p>
+      <p>Phone: <a href="tel:+18043859408">(804) 385-9408</a></p>
+      <p>GitHub: <a href="https://github.com/JonaNetala" target="_blank">https://github.com/JonaNetala</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/jnetala/" target="_blank">https://www.linkedin.com/in/jnetala/</a></p>
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 Jonathan Netala | VCU CREA 330 Portfolio</p>
+  <footer class="footer">
+    <p>© 2025 Jonathan Netala</p>
+    <a href="mailto:netalajd@vcu.edu">Email</a>
+    <a href="https://www.linkedin.com/in/jnetala/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/JonaNetala" target="_blank">GitHub</a>
   </footer>
 </body>
 </html>
